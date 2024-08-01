@@ -1,0 +1,11 @@
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+@media screen and (max-width: 930px) {
+  .cardContainer {
+    margin: auto;
+  }
+}

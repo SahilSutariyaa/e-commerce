@@ -1,0 +1,199 @@
+.detailContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+
+
+.photo {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    overflow-x: auto;
+
+}
+
+.detailPhotoFirst img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+.detailPhotoSecond img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+
+.detailItem {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+}
+
+.detailItem h2 {
+    color: #58595B;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.detailItem h6 {
+    font-size: 15px;
+    color: #888888;
+}
+
+.detailItem p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #58595B;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.sizeBtn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+
+}
+
+.sizeBtn button {
+    /* border: 0.5px solid #58595b;
+    padding: 5px 0px;
+    border-radius: 8px;
+    cursor: pointer; */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #838588;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sizeBtn button:hover {
+    background-color: #444444;
+
+}
+
+.sizeButton {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sizeButton.active {
+    background-color: #444444;
+    color: #fff;
+}
+
+.detailItem label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detailItem select,
+.detailItem input[type='number'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.detailItem .btn1 {
+    padding: 10px 20px;
+    background-color: #EC3D25;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+    width: 160px;
+
+}
+
+
+
+.detailItem .btn2 {
+    padding: 10px 20px;
+    background-color: white;
+    color: #148d8c;
+    border-color: #148d8c;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+    width: 170px;
+}
+
+@media screen and (max-width: 1150px) {
+    .detailContainer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    .detailItem {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .photo {
+        height: auto;
+    }
+
+    .detailItem {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .listBtn button {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .size {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 250px;
+    }
+
+    .sizeBtn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+
+    }
+
+}

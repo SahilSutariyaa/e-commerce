@@ -1,0 +1,77 @@
+.sidebarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 250px;
+    padding: 10px;
+
+}
+
+.sidebarContainer .removeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.removeBtn button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sizeBtn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.sizeBtn button {
+    border: 0.5px solid #58595b;
+    padding: 2px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 45px;
+}
+
+.sizeButton {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sizeButton.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pricesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pricesContainer li {
+    display: flex;
+    gap: 8px;
+}
+
+@media screen and (max-width: 580px) {
+    .sidebarContainer {
+
+        margin: auto;
+    }
+}

@@ -1,0 +1,22 @@
+.home {
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    padding: 10px;
+}
+
+.Customers {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        height: auto;
+    }
+}

@@ -1,0 +1,70 @@
+.container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 300px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    cursor: pointer;
+}
+
+.imgContainer {
+    height: 300px;
+    width: 280px;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgContainer:hover .url2 {
+    opacity: 1;
+}
+
+.url1,
+.url2 {
+    transition: all 0.3s ease-in-out;
+}
+
+.imgContainer:hover .url1 {
+    opacity: 1;
+}
+
+.url2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.descContainer {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        margin: auto;
+    }
+}

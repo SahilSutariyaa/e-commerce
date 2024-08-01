@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.container .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.container .desc p:nth-child(1) {
+    font-weight: 750;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.container .desc p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.container .desc .btnCon {
+    display: flex;
+    /* justify-content: space-evenly !important; */
+    gap: 24px;
+}
+
+.container .desc .btnCon button:nth-child(1) {
+    background-color: white;
+    color: #148c8d;
+    padding: 12px;
+    border: 2px solid #148c8d;
+    min-width: 100px;
+    font-weight: 800;
+    font-size: 0.85rem;
+
+}
+
+
+
+.container .imgCon {
+    height: 400px;
+    width: 400px;
+}
+
+.imgCon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

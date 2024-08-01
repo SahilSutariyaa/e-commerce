@@ -1,0 +1,136 @@
+.navContainer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding: 16px;
+  align-items: center;
+}
+
+.navInnerFirstContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* top wear */
+.dropbtnTopWear {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownTopWear {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContentTopWear {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid black;
+}
+
+.dropdownContentTopWear a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContentTopWear a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdownTopWear:hover .dropdownContentTopWear {
+  display: block;
+}
+
+/*  bottom wear */
+.dropbtnBottomWear {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownBottomWear {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContentBottomWear {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid black;
+}
+
+.dropdownContentBottomWear a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContentBottomWear a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdownBottomWear:hover .dropdownContentBottomWear {
+  display: block;
+}
+
+.navInnerSecondContainer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: end;
+}
+
+.navInnerSecondContainer li:hover {
+  cursor: pointer;
+}
+
+.inputCon input {
+  padding: 4px;
+}
+
+.btn {
+  padding: 4px 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.num {
+  position: relative;
+  left: 33px;
+  bottom: 12px;
+  color: rgb(239, 239, 239);
+  background-color: red;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .navContainer {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .navInnerSecondContainer {
+    justify-content: start;
+  }
+}
