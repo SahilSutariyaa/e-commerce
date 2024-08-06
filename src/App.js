@@ -21,7 +21,9 @@ import AddToCart from "./pages/AddToCart";
 // import PaymentDetails from "./pages/PaymentDetails";
 import Payment from "./pages/Payment";
 
+
 function App() {
+
   return (
     <BrowserRouter>
       <Provider store={ store }>

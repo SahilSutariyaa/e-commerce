@@ -7,6 +7,7 @@ const Payment = () => {
     const [date, setDate] = useState("")
     const [cvv, setCvc] = useState("")
     const [ok, setOk] = useState(true)
+    const [bank, setBank] = useState("")
 
     const [formData, setFormData] = useState({
         name: '',
@@ -130,9 +131,9 @@ const Payment = () => {
                                 ok ?
                                     <div className={ styles.card }>
                                         <div className={ styles.phto }>
-                                            {/* <img lazy src={ chip } alt="" /> */ }
 
-                                            <h3>Bank of Baroda</h3>
+
+                                            <h3>{ bank === '' ? "Enter Your Bank Name" : bank }</h3>
                                         </div>
                                         <div className={ styles.rccs__number }>{ number === '' ? "•••• •••• •••• ••••" : number }</div>
                                         <div className={ styles.name }>
@@ -157,6 +158,18 @@ const Payment = () => {
                         <form action="">
                             <div className={ styles.valid }>
                                 <label htmlFor="">
+                                    Bank Name:
+                                    <input
+                                        value={ bank }
+                                        onChange={ (e) => setBank(e.target.value) }
+                                        required
+                                        type="text"
+                                        placeholder='Enter your Name' />
+
+                                </label>
+                            </div>
+                            <div className={ styles.valid }>
+                                <label htmlFor="">
                                     Name on card:
                                     <input
                                         value={ allData }
@@ -166,7 +179,6 @@ const Payment = () => {
                                         placeholder='Enter your Name' />
 
                                 </label>
-
                             </div>
                             <div className={ styles.valid }>
 

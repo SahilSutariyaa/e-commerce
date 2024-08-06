@@ -12,7 +12,7 @@ import NoWishList from '../components/commen/NoWishList';
 const WishList = () => {
     const dispatch = useDispatch();
     const wishlistItems = useSelector((store) => store.wishList.wishList);
-    console.log('wishlistItems::: ', wishlistItems);
+    // console.log('wishlistItems::: ', wishlistItems);
 
 
     const handleRemoveFromWishList = (id) => {
@@ -25,8 +25,6 @@ const WishList = () => {
 
     return (
         <>
-
-
             <h1 className={ style.list }>My Wishlist</h1>
             <div className={ style.app }>
                 { wishlistItems.length > 0 ? (
